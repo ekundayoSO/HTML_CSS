@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+
+    <table>
+      <tr>
+        <thead>
+          <th>Description</th>
+          <th>Input example</th>
+          <th>Notes</th>
+        </thead>
+      </tr>
+      <tbody>
+        <tr>
+            <td>type="button"</td>
+            <td>
+                <input type="button"
+                value="clickme">
+            </td>
+            <td>Needs value attribute for button text</td>
+        </tr>
+        <tr>
+            <td>type="checkbox"</td>
+            <td>
+                <input type="checkbox" name="something1"> Something 1 <br>
+                <input type="checkbox" name="something1"> Something 2 <br>
+                <input type="checkbox" name="something1"> Something 3 <br>
+            </td>
+            <td>checkbox text is placed after input tag. You cam´n also replace text with label</td>
+        </tr>
+        <tr>
+            <td>
+                type="radio"
+            </td>
+            <td>
+                <input type="radio" name="radio" id="gaga">
+                <label for="gaga">Radio gaga</label> <br>
+                <input type="radio" name="radio" id="gugu">Radio gugu <br>
+            </td>
+            <td>Radio buttons allow you to choose one option</td>
+        </tr>
+        <tr>
+            <td>
+                type="range"
+            </td>
+            <td>
+                <input type="range" min="0" max="25">
+            </td>
+            <td>
+                You can restrict the range by using min and max attributes. <br>
+                type="range" is not supported in IE9 and earlier
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Textarea
+            </td>
+            <td><textarea name="longtext" cols="30" rows="10"></textarea></td>
+            <td>
+                The size of a textarea can be specified by the cols and rows attributes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select example
+            </td>
+            <td>
+                <select name="countries">
+                    <option value="option 1">Nigeria</option>
+                    <option value="option 2">Ethopia</option>
+                    <option value="option 3">Ghana</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Label text</td>
+            <td>
+                <label for="username">Click me</label>
+                <input type="text">
+            </td>
+            <td>
+                <p>Other way to use label and input</p> <br>
+                <label for="username">Click me</label><input type="text" id="username" />
+
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

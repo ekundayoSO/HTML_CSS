@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.pm {
+  margin: 2px;
+  min-height: 100px;
+}
+
+header {
+  display: flex;
+}
+
+.site-title {
+  background-color: yellow;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  background-color: pink;
+  flex: 1;
+}
+
+/* main area */
+main {
+  display: flex;
+  height: 100%;
+}
+
+section {
+  flex: 3;
+}
+
+.post-title {
+  background-color: darkslategrey;
+}
+
+.section-post-container {
+  display: flex;
+  height: calc(100% - 104px);
+}
+
+.post-meta {
+  flex: 1;
+  background-color: lightgreen;
+}
+
+.main-content-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  background-color: lightgray;
+  flex: 1;
+}
+
+.main-content-img {
+  background-color: yellow;
+  flex: 2;
+}
+
+/* aside area */
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside div:first-child {
+  background-color: orange;
+  flex: 1;
+}
+
+aside div:nth-child(2) {
+  background-color: green;
+  flex: 1;
+}
+
+aside div:last-child {
+  background-color: violet;
+  flex: 1;
+}
+
+/* footer */
+
+footer {
+  background-color: brown;
+}
+
+@media (min-width: 768x) {
+  main {
+    flex-direction: column;
+  }
+  .section-post-container {
+    display: flex;
+  }
+}

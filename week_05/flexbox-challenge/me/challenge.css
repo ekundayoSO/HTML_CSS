@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    
+}
+
+.site-title {
+    flex: 1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex: 3;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main {
+    display: block;
+}
+
+.post-title {
+    display: flex;
+    flex: 4;
+}
+
+section {
+    display: flex;
+
+}
+
+footer {
+    background-color: red;
+    padding: 1rem;
+    text-align: left;
+}
+

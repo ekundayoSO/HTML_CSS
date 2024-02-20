@@ -1,0 +1,15 @@
+body {
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    color: yellow;
+}
+
+img {
+    width: 40%;
+    max-width: 300px;
+}
