@@ -1,0 +1,198 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Projects */
+.project-section {
+  padding: 50px 0;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-group {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-group img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* About me */
+.about-me {
+  padding: 50px 0;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me-container img {
+  width: 45%;
+}
+
+.about-me-container p {
+  width: 45%;
+}
+
+/* Skills */
+.skill {
+  padding: 50px 0;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-box {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background-color: #f0f0f0;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress1 {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress2 {
+  background-color: #2196f3;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress3 {
+  background-color: #ff9800;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress4 {
+  background-color: #f44336;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.form-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  .project-group {
+    width: 100%;
+  }
+  
+  .about-me-container,
+  .about-me-container p,
+  .about-me-container img {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .skill-box {
+    width: 100%;
+  }
+}
