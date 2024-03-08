@@ -1,4 +1,42 @@
-// 
+// // 
+
+// const backToTopBtn = document.querySelector(".backToTop");
+// const headerElement = document.querySelector("header");
+// const mobButton = document.querySelector(".mobile");
+// const nav = document.querySelector("nav");
+// const menuItems = document.querySelectorAll("nav ul li a");
+
+// function scrollFun() {
+//   if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+//     backToTopBtn.style.display = "block";
+//     header.classList.add("bg");
+//   } else {
+//     backToTopBtn.style.display = "none";
+//     header.classList.remove("bg");
+    
+//   }
+// };
+
+// backToTopBtn.addEventListener("click", () => {
+//   document.body.scrollTop = 0; 
+//   document.documentElement.scrollTop = 0; 
+//   header.classList.toggle("bg");
+// });
+
+// window.addEventListener("scroll", scrollFun);
+// backToTopBtn.addEventListener("click", topFunction);
+
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+// const toggleMenu = () => {
+//   nav.classList.toggle("responsive");
+// };
+// mobButton.addEventListener("click", toggleMenu);
+// menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
+
 
 const backToTopBtn = document.querySelector(".backToTop");
 const headerElement = document.querySelector("header");
@@ -7,22 +45,23 @@ const nav = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("nav ul li a");
 
 function scrollFun() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+  if (
+    document.body.scrollTop > 1000 ||
+    document.documentElement.scrollTop > 1000
+  ) {
     backToTopBtn.style.display = "block";
+    headerElement.classList.add("bg");
   } else {
     backToTopBtn.style.display = "none";
-  }
-
-  headerColor();
-}
-
-function headerColor() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    headerElement.style.backgroundColor = "coral";
-  } else {
-    headerElement.style.backgroundColor = "rgba(146, 172, 146, 1)"; 
+    headerElement.classList.remove("bg");
   }
 }
+
+backToTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  headerElement.classList.toggle("bg");
+});
 
 window.addEventListener("scroll", scrollFun);
 backToTopBtn.addEventListener("click", topFunction);
@@ -35,6 +74,6 @@ function topFunction() {
 const toggleMenu = () => {
   nav.classList.toggle("responsive");
 };
+
 mobButton.addEventListener("click", toggleMenu);
 menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
-
